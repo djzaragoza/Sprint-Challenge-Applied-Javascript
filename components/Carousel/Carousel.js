@@ -1,6 +1,9 @@
 class Carousel {
+    constructor(element) {
+        this.element = element;
+        this.images = [...document.querySelectorAll('.carousel.img')]
+            .map(img => new CarouselImage(img));
 
-}
 
 let carousel = document.querySelector();
 
